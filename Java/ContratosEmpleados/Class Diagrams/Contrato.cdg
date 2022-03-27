@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Contrato">
+  <ClassDiagramComponents>
+    <Class name="Empleado" package="" visibility="public" xPosition="504.0" yPosition="50.0">
+      <Fields>
+        <Field name="RFC" type="String" visibility="private"/>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="fechaIngreso" type="String" visibility="private"/>
+        <Field name="sueldoBase" type="float" visibility="private"/>
+        <Field name="sueldoTotal" type="float" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getRFC" returnType="String" visibility="public"/>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="getFechaIngreso" returnType="String" visibility="public"/>
+        <Method name="setSueldo" returnType="String" visibility="public"/>
+        <Method name="setContarto" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Administrativo" package="" visibility="public" xPosition="779.0" yPosition="412.0">
+      <Fields>
+        <Field name="bono" type="float" visibility="private"/>
+        <Field name="sueldo" type="float" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="Empleado" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Supervisor" package="" visibility="public" xPosition="516.0" yPosition="444.0">
+      <Fields>
+        <Field name="numeroContratos" type="float" visibility="private"/>
+        <Field name="sueldo" type="float" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="Empleado" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Obrero" package="" visibility="public" xPosition="260.0" yPosition="412.0">
+      <Fields>
+        <Field name="horasTrabajadas" type="float" visibility="private"/>
+        <Field name="sueldo" type="float" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="Empleado" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="Administrativo" target="Empleado"/>
+    <IsRelation name="is" source="Supervisor" target="Empleado"/>
+    <IsRelation name="is" source="Obrero" target="Empleado"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

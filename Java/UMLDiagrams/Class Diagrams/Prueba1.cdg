@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Prueba1">
+  <ClassDiagramComponents>
+    <Class name="Estudiante" package="" visibility="public" xPosition="397.0" yPosition="145.0">
+      <Fields>
+        <Field name="name" type="String" visibility="private"/>
+        <Field name="califExamen" type="float" visibility="private"/>
+        <Field name="califTrabajos" type="float" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="getHwGrade" returnType="float" visibility="public"/>
+        <Method name="getExamGrade" returnType="float" visibility="public"/>
+        <Method name="setHighestHwGrade" returnType="float" visibility="public"/>
+        <Method name="setLowestExamGrade" returnType="float" visibility="public"/>
+        <Method name="setAverage" returnType="float" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>

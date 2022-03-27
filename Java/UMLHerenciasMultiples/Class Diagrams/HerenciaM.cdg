@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="HerenciaM">
+  <ClassDiagramComponents>
+    <Interface name="IEmpleado" package="" visibility="public" xPosition="246.0" yPosition="47.0">
+      <Methods>
+        <Method name="trabaja" returnType="void" visibility="public"/>
+      </Methods>
+    </Interface>
+    <Class name="Licenciado" package="" visibility="public" xPosition="246.0" yPosition="350.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="trabaja" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Persona" package="" visibility="public" xPosition="14.0" yPosition="18.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="name"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Ingeniero" package="" visibility="public" xPosition="14.0" yPosition="311.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="trabaja" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="Ingeniero" target="Persona"/>
+    <IsRelation name="is" source="Licenciado" target="Persona"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Licenciado" target="IEmpleado"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Ingeniero" target="IEmpleado"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
